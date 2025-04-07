@@ -9,10 +9,6 @@ tags:
 
 ​**​场景​**​：对索引列进行运算或函数操作
 
-sql
-
-复制
-
 ```sql
 -- 假设user表有age索引
 -- 失效示例：
@@ -42,10 +38,6 @@ SELECT * FROM user WHERE phone = '13800138000';  -- 字符串形式
 
 ​**​场景​**​：使用前导通配符的LIKE查询
 
-sql
-
-复制
-
 ```sql
 -- 假设user表有name字段索引
 -- 失效示例：
@@ -60,9 +52,6 @@ SELECT * FROM user WHERE name LIKE '张%';   -- 只有尾部%可以使用索引
 
 ​**​场景​**​：OR连接的条件中有非索引列
 
-sql
-
-复制
 
 ```sql
 -- 假设user表有age索引，但address无索引
@@ -82,9 +71,6 @@ SELECT * FROM user WHERE address = '北京';
 
 ​**​场景​**​：当查询返回大量数据时，优化器可能选择全表扫描
 
-sql
-
-复制
 
 ```sql
 -- 假设user表有gender字段索引，但90%数据gender=1
@@ -99,9 +85,7 @@ SELECT * FROM user FORCE INDEX(idx_gender) WHERE gender = 1;
 
 ​**​场景​**​：ORDER BY与WHERE条件不匹配或排序方向不一致
 
-sql
 
-复制
 
 ```sql
 -- 假设user表有联合索引(age, name)
@@ -119,9 +103,6 @@ SELECT * FROM user WHERE age > 20 ORDER BY age, name;  -- 使用联合索引
 
 ### 7. 使用NOT、!=、<>操作符
 
-sql
-
-复制
 
 ```sql
 -- 假设user表有status索引
@@ -133,10 +114,6 @@ SELECT * FROM user WHERE status IN (0, 2, 3);
 ```
 
 ### 8. 联合索引不满足最左前缀原则
-
-sql
-
-复制
 
 ```sql
 -- 假设有联合索引(col1, col2, col3)
@@ -150,9 +127,6 @@ SELECT * FROM table WHERE col1 = 'value' AND col2 = 'value';
 
 ### 9. 使用IS NULL/IS NOT NULL
 
-sql
-
-复制
 
 ```sql
 -- 假设user表有name索引
@@ -161,10 +135,6 @@ SELECT * FROM user WHERE name IS NULL;
 ```
 
 ### 10. 类型隐式转换
-
-sql
-
-复制
 
 ```sql
 -- 假设user表有id索引，类型为varchar

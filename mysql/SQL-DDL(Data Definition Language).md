@@ -9,7 +9,7 @@ tags:
 
 # 定义表格
 
-定义表格 **[[字段数据类型]]、存储引擎、字符集、数据类型、索引、默认值、[[约束]]、自增等**。
+定义表格 **[[SQL-DML-字段数据类型]]、存储引擎、字符集、数据类型、索引、默认值、[[SQL-DML-约束]]、自增等**。
 ```sql
 CREATE TABLE users (
     user_id      INT UNSIGNED AUTO_INCREMENT PRIMARY KEY COMMENT '用户ID',
