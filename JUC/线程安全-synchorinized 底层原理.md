@@ -43,3 +43,4 @@ Java 对象头（Object Header）是 JVM 用于存储对象元数据的结构，
 - Owner：**​JVM 层的线程指针（C++ 结构）​**，表示该线程成功获取锁。
 - EntryList：线程竞争锁失败后进入该集合，此时该线程进入 Blocked 状态。
 - WatiSet：线程拥有者调用 wait() 等方法**先**后进入 Waiting 状态，**后**释放锁。被唤醒后，进入 EntryList 重新竞争锁。
+
