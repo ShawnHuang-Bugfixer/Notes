@@ -25,3 +25,13 @@ aliases:
 
 切面类可以使用注解 `@Order` 或者实现接口 `Ordered` 来控制切面顺序。
 
+# `SpringAOP` 底层实现
+
+`Spring-AOP` 底层使用动态代理实现。被代理类如果实现了接口，则使用 `JDKProxy` 否则使用 `CGLibProxy` 。
+
+`CGLibProxy` 通过**继承并重写方法**构造代理对象，要求类和方法不能被 `final` `private` `staic` 修饰。
+
+`JDKProxy` 基于接口构造代理对象，接口本身不能为 `final`，接口中的方法默认都是 `public abstract`，不能为 `final`。
+
+**`Spring AOP`（基于代理机制）仅能对 `public` 且 非 `final` 的方法生效，且必须通过代理对象调用才能生效。**
+![[attachments/Pasted image 20250423105827.png]]

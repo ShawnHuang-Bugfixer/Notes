@@ -155,3 +155,38 @@ Bean 销毁阶段
 
 容器关闭时进入 Bean 销毁阶段，此时容器会检查是否 Bean 是否实现 `Destruction` 接口，检查 Bean 是否定义了 `destry` 方法，根据情况调用。
 
+# 循环依赖
+
+两个或多个 Bean 之间相互持有对方的引用，即 Bean 对象循环引用。
+
+```Java
+@Component
+public class CircularDependencyA {
+    @Autowired
+    private CircularDependencyB circB;
+}
+
+@Component
+public class CircularDependencyB {
+    @Autowired
+    private CircularDependencyA circA;
+}
+```
+
+Spring 使用三级缓存解决部分循环依赖：
+
+- **一级缓存（singletonObjects）**：存放最终形态的 Bean（已经实例化、属性填充、初始化），单例池，为“Spring 的单例属性”⽽⽣。一般情况我们获取 Bean 都是从这里获取的，但是并不是所有的 Bean 都在单例池里面，例如原型 Bean 就不在里面。
+- **二级缓存（earlySingletonObjects）**：存放过渡 Bean（半成品，尚未属性填充），也就是三级缓存中`ObjectFactory`产生的对象，与三级缓存配合使用的，可以防止 AOP 的情况下，每次调用`ObjectFactory#getObject()`都是会产生新的代理对象的。
+- **三级缓存（singletonFactories）**：存放`ObjectFactory`，`ObjectFactory`的`getObject()`方法（最终调用的是`getEarlyBeanReference()`方法）可以生成原始 Bean 对象或者代理对象（如果 Bean 被 AOP 切面代理）。三级缓存只会对单例 Bean 生效。
+
+假设声明了两个 Bean 对象 A 和 B，且 A 与 B 存在循环依赖问题。pring 缓存查询流程如下：
+
+- 创建 A -> 依赖注入发现需要 B
+- 创建 B -> 依赖注入发现需要 A
+- 先查询一二级缓存，如果 A 不存在，开始查询第三季缓存。
+- 如果 A 已经有 ObjectFactory（3级缓存），可以先拿一个早期引用，注入 B 中去，并把生成的从三级缓存移除并加入到二级缓存。
+- 循环依赖解开，继续完成 A 和 B 的创建
+
+## `@Lazy` 解决循环依赖
+
+`@Lazy` 注解标注某个依赖时，Spring 并不会立即创建该依赖对象，而是先创建一个**代理对象**（AOP 代理或 CGLIB 代理），并将这个代理对象注入到依赖它的 Bean 中，**避免了在构造阶段的递归依赖问题**。
