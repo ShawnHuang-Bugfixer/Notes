@@ -1,0 +1,143 @@
+.markdown-preview-view {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+  line-height: 1.65;
+  font-size: 15px;
+  padding: 2em;
+  max-width: 850px;
+  margin: auto;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* 一级标题 */
+.markdown-preview-view h1,
+.markdown-preview-view h2 {
+  border-left: 4px solid #003e7e;
+  padding-left: 10px;
+  margin-top: 1.2em;
+  margin-bottom: 0.6em;
+  color: #003e7e;
+  font-size: 1.5em;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+/* 二级标题 */
+.markdown-preview-view h3 {
+  margin-top: 1em;
+  margin-bottom: 0.4em;
+  color: #111;
+  font-weight: 700;
+  font-size: 1.15em;
+  padding-left: 0;
+  border: none;
+  background: none;
+}
+
+/* 强调文字 */
+.markdown-preview-view strong {
+  color: #000;
+  font-weight: 700;
+}
+
+/* 分隔线 */
+.markdown-preview-view hr {
+  border: none;
+  border-top: 2px solid #bbb;
+  margin: 1.5em 0;
+}
+
+/* 列表 */
+.markdown-preview-view ul {
+  padding-left: 1.3em;
+  list-style-type: disc;
+}
+.markdown-preview-view li {
+  margin-bottom: 0.3em;
+}
+
+/* 子列表 */
+.markdown-preview-view ul ul {
+  margin-left: 1.1em;
+  list-style-type: circle;
+  color: #222;
+}
+
+/* 技术栈代码块 - 提高背景和前景对比 */
+.markdown-preview-view code {
+  background-color: #003e7e;
+  color: #ffffff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-family: "Courier New", monospace;
+  font-weight: 600;
+}
+
+/* 列表中强调关键词 */
+.markdown-preview-view li strong {
+  color: #003e7e;
+  font-weight: 700;
+}
+
+/* 表格 */
+.markdown-preview-view table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.2em 0;
+}
+
+.markdown-preview-view th,
+.markdown-preview-view td {
+  border: 1px solid #888;
+  padding: 8px 12px;
+  text-align: left;
+  background-color: #fff;
+  color: #000;
+}
+
+.markdown-preview-view th {
+  background-color: #e0ecff;
+  font-weight: bold;
+  color: #003366;
+}
+
+/* 段落 */
+.markdown-preview-view p {
+  margin: 0.3em 0;
+}
+
+/* 个人信息字段对齐 */
+.markdown-preview-view p strong {
+  min-width: 5em;
+  display: inline-block;
+  color: #000;
+}
+
+/* 项目块分组 */
+.markdown-preview-view .resume-section {
+  padding: 1em 1.2em;
+  background-color: #f2f7ff;
+  border: 1px solid #005fa3;
+  border-radius: 6px;
+  margin-bottom: 1.2em;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+
+/* 动画淡入（仅屏幕显示有效） */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 取消邮箱自动链接样式 */
+.markdown-preview-view a[href^="mailto:"] {
+  color: inherit;
+  text-decoration: none;
+  pointer-events: none;
+  cursor: default;
+}

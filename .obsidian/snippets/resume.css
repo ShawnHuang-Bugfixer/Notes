@@ -1,0 +1,89 @@
+/* ===== Resume CSS for Obsidian (教育类简历风格) ===== */
+
+/* 通用设置 */
+body {
+  font-family: "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
+  line-height: 1.6;
+  color: #2e2e2e;
+  background: #ffffff;
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* 一级标题：姓名 + 职业 */
+h1 {
+  font-size: 2em;
+  color: #2c3e50;
+  border-bottom: 3px solid #3498db;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.5em;
+}
+
+/* 二级标题：模块标题 */
+h2 {
+  font-size: 1.4em;
+  color: #2980b9;
+  border-left: 4px solid #2980b9;
+  padding-left: 0.6em;
+  margin-top: 1.5em;
+}
+
+/* 三级标题：学校/单位名称 */
+h3 {
+  font-size: 1.15em;
+  color: #2e4053;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+
+/* 时间 + 地点描述 */
+em {
+  color: #7f8c8d;
+  font-style: normal;
+  font-size: 0.95em;
+}
+
+/* 列表美化 */
+ul {
+  padding-left: 1.2em;
+}
+
+ul li {
+  margin-bottom: 0.3em;
+}
+
+/* 强调文本 */
+strong {
+  color: #34495e;
+}
+
+/* 表格支持（如果使用） */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1em;
+  font-size: 0.95em;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f5f5f5;
+  color: #2c3e50;
+}
+
+/* 联系方式部分优化 */
+.contact-info {
+  font-size: 0.95em;
+  color: #555;
+  margin-top: 0.5em;
+}
+
+.contact-info span {
+  display: inline-block;
+  margin-right

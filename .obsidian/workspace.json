@@ -1,0 +1,234 @@
+{
+  "main": {
+    "id": "35d3e955d6350d42",
+    "type": "split",
+    "children": [
+      {
+        "id": "e839201eff2b9452",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "abad61833a750575",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "其他/简历模板.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "简历模板"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "7c44ce6f2950ed74",
+    "type": "split",
+    "children": [
+      {
+        "id": "31f726347a883c25",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c9dd3d9826f9e0a3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTimeReverse",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "a175269ac553a089",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "711bfbb30e3f53d6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "5db28b199246c0e1",
+    "type": "split",
+    "children": [
+      {
+        "id": "fbf6ab62ac7d0bdc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e308afc5a30b7a76",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Spring/Spring-MVC.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Spring-MVC 的反向链接列表"
+            }
+          },
+          {
+            "id": "2547e80f92334355",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Spring/Spring-MVC.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Spring-MVC 的出链列表"
+            }
+          },
+          {
+            "id": "09d188ee9420e3d0",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "22d2776cefdedb81",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "实习培训/Day 6.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Day 6 的大纲"
+            }
+          },
+          {
+            "id": "83676ba3969b3bae",
+            "type": "leaf",
+            "state": {
+              "type": "mermaid-toolbar-view",
+              "state": {},
+              "icon": "trident-custom",
+              "title": "Mermaid Toolbar"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 217.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "mermaid-tools:Open Mermaid Toolbar": false
+    }
+  },
+  "active": "abad61833a750575",
+  "lastOpenFiles": [
+    "Spring/Spring-AOP.md",
+    "Spring/Spring-CoreContainer.md",
+    "Spring/Spring-模块分类.md",
+    "Spring/Spring-MVC.md",
+    "Spring/Spring-事务.md",
+    "Mybatis/Mybatis 核心工作流程.md",
+    "mysql/SQL-Transaction.md",
+    "mysql/Index-覆盖索引和回表查询.md",
+    "Redis/内存管理.md",
+    "其他/消息推送模块设计.md",
+    "实习培训/Day7.md",
+    "实习培训/Day 6.md",
+    "Redis/数据结构.md",
+    "Redis/网络模型.md",
+    "Redis/数据持久化.md",
+    "Redis/集群.md",
+    "其他/简历模板.md",
+    "实习培训/Day3.md",
+    "JUC/线程安全-synchorinized 底层原理.md",
+    "JUC/线程安全-基础知识.md",
+    "JUC/线程基础-JVM 线程状态与操作系统线程状态.md",
+    "JUC/线程安全-synchorinized 轻量级锁.md",
+    "JUC/线程基础-常用方法.md",
+    "JUC/线程设计模式.md",
+    "JUC/线程基础-线程原理.md",
+    "JUC/线程基础-创建线程.md",
+    "系统设计/认证和授权",
+    "系统设计",
+    "实习培训/attachments/Pasted image 20250618160047.png",
+    "实习培训/attachments/Pasted image 20250618155753.png",
+    "实习培训/attachments/Pasted image 20250618152304.png",
+    "实习培训/attachments/Pasted image 20250618152122.png",
+    "实习培训/attachments/Pasted image 20250618151940.png",
+    "实习培训/attachments/Pasted image 20250618151621.png",
+    "实习培训/attachments/Pasted image 20250618143730.png",
+    "实习培训/attachments/Pasted image 20250618143655.png",
+    "实习培训/attachments/Pasted image 20250618143524.png",
+    "实习培训/attachments/Pasted image 20250618143109.png",
+    "实习培训/attachments",
+    "其他",
+    "实习培训",
+    "Mybatis/attachments",
+    "Mybatis",
+    "mysql.zip",
+    "Network/attachments",
+    "Network",
+    "未命名.canvas",
+    "未命名未命名.canvas"
+  ]
+}
