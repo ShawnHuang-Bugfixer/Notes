@@ -2,9 +2,9 @@
   font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   color: #000000;
   background-color: #ffffff;
-  line-height: 1.65;
-  font-size: 15px;
-  padding: 2em;
+  line-height: 1.35; /* 全局行间距更紧凑 */
+  font-size: 14px;  /* 全局字体大小稍缩小 */
+  padding: 1.5em;
   max-width: 850px;
   margin: auto;
   -webkit-print-color-adjust: exact;
@@ -12,89 +12,90 @@
   animation: fadeIn 0.3s ease-in-out;
 }
 
-/* 一级标题 */
+/* 一级标题（如：教育背景、项目经验等） */
 .markdown-preview-view h1,
 .markdown-preview-view h2 {
-  border-left: 4px solid #003e7e;
-  padding-left: 10px;
-  margin-top: 1.2em;
-  margin-bottom: 0.6em;
+  border-left: 3px solid #003e7e;
+  padding-left: 8px;
+  margin-top: 0.6em !important;
+  margin-bottom: 0.3em !important;  /* 减小段落之间的垂直间距 */
   color: #003e7e;
-  font-size: 1.5em;
+  font-size: 24px; /* 稍小一点的标题字号 */
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.3px;
 }
 
-/* 二级标题 */
+/* 二级标题（如项目模块下的小节标题） */
 .markdown-preview-view h3 {
-  margin-top: 1em;
-  margin-bottom: 0.4em;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
   color: #111;
   font-weight: 700;
-  font-size: 1.15em;
+  font-size: 20; /**/
   padding-left: 0;
   border: none;
   background: none;
 }
 
-/* 强调文字 */
+/* 加粗文字（强调项） */
 .markdown-preview-view strong {
   color: #000;
   font-weight: 700;
 }
 
-/* 分隔线 */
+/* 分隔线样式 */
 .markdown-preview-view hr {
   border: none;
-  border-top: 2px solid #bbb;
-  margin: 1.5em 0;
+  border-top: 1px solid #bbb;
+  margin: 1.2em 0;
 }
 
-/* 列表 */
+/* 主列表样式（比如：项目功能点） */
 .markdown-preview-view ul {
-  padding-left: 1.3em;
+  padding-left: 0.6em !important;  /* 缩小整体左缩进 */
+  margin-left: 0em !important;
   list-style-type: disc;
-}
-.markdown-preview-view li {
-  margin-bottom: 0.3em;
+  margin-top: 0em;
+  margin-bottom: 0em;
 }
 
-/* 子列表 */
+/* 所有列表项的行距和缩进控制 */
+.markdown-preview-view li {
+  margin-left: 0.1em !important;   /* 缩小嵌套缩进 */
+  padding-left: 0.1em !important;  /* 缩小点与文字之间距离 */
+  margin-bottom: 0em;            /* 缩小点与点之间垂直距离 */
+}
+
+/* 子列表样式（如项目功能点下的子项） */
 .markdown-preview-view ul ul {
-  margin-left: 1.1em;
+  padding-left: 0.5em !important;  /* 二级列表进一步缩进 */
+  margin-left: 0.2em !important;       /* 清除默认 margin */
   list-style-type: circle;
   color: #222;
 }
 
-/* 技术栈代码块 - 提高背景和前景对比 */
+/* 技术栈代码块样式，如 `Spring Boot` `Redis` 等 */
 .markdown-preview-view code {
   background-color: #003e7e;
   color: #ffffff;
-  padding: 2px 6px;
+  padding: 1.2px 1.2px;
   border-radius: 4px;
-  font-size: 0.9em;
+  font-size:  12px;
   font-family: "Courier New", monospace;
-  font-weight: 600;
+  font-weight: 62;
 }
 
-/* 列表中强调关键词 */
+/* 列表中强调文字（如“安全注册”） */
 .markdown-preview-view li strong {
   color: #003e7e;
-  font-weight: 700;
-}
-
-/* 表格 */
-.markdown-preview-view table {
-  border-collapse: collapse;
-  width: 100%;
-  margin: 1.2em 0;
+  font-weight: 700
 }
 
 .markdown-preview-view th,
 .markdown-preview-view td {
   border: 1px solid #888;
-  padding: 8px 12px;
+  padding: 6px 10px;
   text-align: left;
   background-color: #fff;
   color: #000;
@@ -106,38 +107,40 @@
   color: #003366;
 }
 
-/* 段落 */
+/* 段落样式（正文） */
 .markdown-preview-view p {
-  margin: 0.3em 0;
+  margin: 0.2em 0;
 }
 
-/* 个人信息字段对齐 */
+/* 个人信息中的字段对齐，例如“姓名：” */
 .markdown-preview-view p strong {
   min-width: 5em;
   display: inline-block;
   color: #000;
 }
 
-/* 项目块分组 */
+/* 项目模块块样式（带浅蓝底、圆角、阴影） */
 .markdown-preview-view .resume-section {
-  padding: 1em 1.2em;
+  padding: 0.8em 1em;
   background-color: #f2f7ff;
   border: 1px solid #005fa3;
-  border-radius: 6px;
-  margin-bottom: 1.2em;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+  border-radius: 5px;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
 }
 
-/* 动画淡入（仅屏幕显示有效） */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(8px); }
-  to { opacity: 1; transform: translateY(0); }
+/* 在 resume-section 中进一步缩小段落和列表的行间距 */
+.markdown-preview-view .resume-section p,
+.markdown-preview-view .resume-section li {
+  line-height: 1.25;
+  margin-bottom: 0.15em;
 }
 
-/* 取消邮箱自动链接样式 */
-.markdown-preview-view a[href^="mailto:"] {
-  color: inherit;
-  text-decoration: none;
-  pointer-events: none;
-  cursor: default;
+/* 专门控制 markdown 分隔线（即 "---"）的上下间距 */
+.markdown-preview-view hr {
+  border: none;
+  border-top: 1.2px solid #054f98; /* 粗细控制 */
+  margin-top: 0.5em;   /* 原为 1.2em，适当缩小分隔线顶部间距 */
+  margin-bottom: 0.8em; /* 原为 1.2em，适当缩小分隔线底部间距 */
 }
+
