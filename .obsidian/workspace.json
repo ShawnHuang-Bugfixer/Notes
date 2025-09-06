@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ef6ae0ebe611221b",
+        "id": "601af502c9132751",
         "type": "tabs",
         "children": [
           {
-            "id": "650f235328e9564f",
+            "id": "3d6c753143263c36",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog 草稿/基于 IP + 方法的本地限流实现方案（Spring Boot + Guava + Caffeine）.md",
+                "file": "blog 草稿/Redis 管道与 CompletableFuture 并行化在优惠券查询场景中的实践.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "基于 IP + 方法的本地限流实现方案（Spring Boot + Guava + Caffeine）"
+              "title": "Redis 管道与 CompletableFuture 并行化在优惠券查询场景中的实践"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 369.5069465637207
+    "width": 200
   },
   "right": {
     "id": "5db28b199246c0e1",
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog 草稿/基于 AOP 与多级缓存的 HotKey 探测与提升设计.md",
+                "file": "blog 草稿/抢券服务的两种实现思路对比：一致性与实时性的权衡.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "基于 AOP 与多级缓存的 HotKey 探测与提升设计 的大纲"
+              "title": "抢券服务的两种实现思路对比：一致性与实时性的权衡 的大纲"
             }
           },
           {
@@ -183,47 +183,47 @@
   },
   "active": "c9dd3d9826f9e0a3",
   "lastOpenFiles": [
-    "blog 草稿/基于 AOP 与多级缓存的 HotKey 探测与提升设计.md",
-    "blog 草稿/基于 IP + 方法的本地限流实现方案（Spring Boot + Guava + Caffeine）.md",
-    "[Spring.md",
+    "blog 草稿/抢券服务的两种实现思路对比：一致性与实时性的权衡.md",
+    "blog 草稿/Redis 管道与 CompletableFuture 并行化在优惠券查询场景中的实践.md",
+    "未命名.md",
     "其他/简历模板.md",
+    "其他/简历模板.md.baiduyun.uploading.cfg",
+    "blog 草稿/线程池丢弃任务兜底方案设计.md",
+    "blog 草稿/位编码存储信息-位图存储通知类型通知方式.md",
+    "blog 草稿/百万级推送任务系统设计.md",
+    "blog 草稿/基于 ShardingShpere 将大规模数据表水平拆分.md",
+    "blog 草稿/策略模式实践.md",
+    "blog 草稿/责任链模式实践.md",
+    "blog 草稿/模板方法模式实践.md",
+    "blog 草稿/基于 IP + 方法的本地限流实现方案（Spring Boot + Guava + Caffeine）.md",
     "blog 草稿/Spring Cache 实践-构建多级缓存.md",
-    "blog 草稿/邮箱验证码注册.md",
+    "blog 草稿/未命名 1.md",
+    "blog 草稿/attachments/Pasted image 20250902162851.png",
     "blog 草稿/RBAC 权限模型设计与实战.md",
-    "blog 草稿/如何将 HttpServletRequest 的 RequestBody 包装为可重复读取.md",
-    "blog 草稿/Spring Cache 核心组件及其工作流程.md",
+    "blog 草稿/Spring WebSocket.md",
+    "blog 草稿/Spring State Machine 核心组件.md",
+    "blog 草稿/attachments/策略模式.png",
+    "blog 草稿/attachments/Pasted image 20250902104752.png",
+    "blog 草稿/attachments/Pasted image 20250902101551.png",
+    "blog 草稿/attachments/Pasted image 20250902094939.png",
+    "mysql/锁-表级锁.md",
+    "mysql/锁-全局锁.md",
+    "mysql/锁-分类.md",
+    "mysql/锁-行级锁.md",
+    "mysql/Index-覆盖索引和回表查询.md",
+    "mysql/SQL-Transaction.md",
+    "mysql/MVCC 和 UndoLog 回滚日志.md",
+    "mysql/日志.md",
+    "mysql/SQL-DDL(Data Definition Language).md",
+    "blog 草稿/attachments/Pasted image 20250901164554.png",
     "blog 草稿/attachments/@Cacheable.png",
     "blog 草稿/attachments/Pasted image 20250901131858.png",
     "blog 草稿/attachments/Pasted image 20250901130856.png",
     "blog 草稿/attachments/Pasted image 20250901130845.png",
     "blog 草稿/attachments",
-    "系统设计/认证和授权/SSO 单点登录方案.md",
-    "其他/二姐.md",
-    "其他/二姐backup.md",
-    "其他/模块设计.md",
-    "其他/消息推送模块设计.md",
-    "blog 草稿/JWT 双 Token 身份验证实战.md",
-    "blog 草稿/WebSocket Disruptor 协同编辑实践.md",
-    "2025-04-09.md",
-    "未命名 1.md",
-    "未命名.md",
-    "1.md",
-    "blog 草稿/Spring WebSocket.md",
-    "blog 草稿/Spring State Machine 核心组件.md",
     "其他/简历模板 1.md.baiduyun.uploading.cfg",
-    "mysql/锁-行级锁.md",
-    "mysql/锁-表级锁.md",
-    "mysql/锁-全局锁.md",
-    "mysql/Index-覆盖索引和回表查询.md",
-    "其他/简历模板.md.baiduyun.uploading.cfg",
-    "科伦/attachments/Pasted image 20250618134357.png",
     "系统设计/认证和授权",
     "系统设计",
-    "科伦/attachments/Pasted image 20250618160047.png",
-    "科伦/attachments/Pasted image 20250618155753.png",
-    "科伦/attachments/Pasted image 20250618152304.png",
-    "科伦/attachments/Pasted image 20250618152122.png",
-    "科伦/attachments/Pasted image 20250618151940.png",
     "科伦/attachments",
     "其他",
     "blog 草稿",
